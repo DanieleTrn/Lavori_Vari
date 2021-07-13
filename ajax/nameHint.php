@@ -17,7 +17,7 @@
                 document.getElementById("txtHint").innerHTML = this.responseText;
             }
             };
-            xmlhttp.open("GET", "getHint.php?q=" + str, true);
+            xmlhttp.open("GET", "./api/getHint.php?q=" + str, true);
             xmlhttp.send();
         }
         }

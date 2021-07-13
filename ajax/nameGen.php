@@ -27,7 +27,7 @@
             <!-- 2. Definisco il percorso della risorsa richiesta -->
             <!-- 3. valore booleano, se true la connessione sarà asincrona, false se sincrona -->
                  
-                xhttp.open("GET","nameGenerator.php",true);
+                xhttp.open("GET","./api/nameGenerator.php",true);
                 xhttp.send(); <!-- Invio la richiesta, onreadystatechange processerà la richiesta quando completa -->
         }
     </script>
