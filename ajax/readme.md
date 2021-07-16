@@ -1,0 +1,3 @@
+- nameGen.php = Un semplice esercizio che utilizza AJAX. il codice è commentato spiegando i vari passaggi
+- nameHint.php = Un esercizio dove si prendono dei nomi da una risorsa in base all'input digitato dall'utente nel textfield
+- randomUser.php = Un esercizio dove la risorsa si ottiene da un sito esterno. 
