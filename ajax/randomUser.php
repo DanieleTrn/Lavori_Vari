@@ -12,10 +12,18 @@
             let xhttp = new XMLHttpRequest();
             xhttp.onreadystatechange = function(){
                 if(this.readyState == 4 && this.status == 200){
+                    
+                    //recupero il JSON ottenuto dal server
                     var datas = this.responseText;
-                    console.log(datas.results);
-                    /*var nome = datas[0].results.name.first
-                    document.getElementById("demo").innerHTML = nome;*/
+                    var json = JSON.parse(datas);
+                    var name = json.results[0].name.first;
+                    console.log(name);
+                    //Metto delle immagini sulla pagina
+                    var img = document.createElement("img");
+                    img.src = json.results[0].picture.large;
+                    var spanDoc = document.getElementById("demo");
+                    spanDoc.appendChild(img);
+
                 }
             };
             xhttp.open("GET","https://randomuser.me/api/",true);
