@@ -30,5 +30,25 @@ public class Libro {
         return this.nomeLibro + " " + this.isbn;
     }
     
-    
+    @Override
+    public boolean equals(Object o){
+        if(this == o){
+            return true;
+        }
+        if(null == o){
+            return false;
+        }
+        if(getClass() != o.getClass()){
+            return false;
+        }
+        Libro l = (Libro)o;
+        return this.getIsbn() == l.getIsbn();
+    }
+
+    @Override
+    public int hashCode() {
+        int hash = 7;
+        hash = 23 * hash + this.isbn;
+        return hash;
+    }
 }
