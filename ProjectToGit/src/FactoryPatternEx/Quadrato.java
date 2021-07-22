@@ -4,17 +4,17 @@ public class Quadrato extends Forma{
     int nAngoli;
     
     @Override
-    float getArea() {
+    public float getArea() {
         return 3;
     }
 
     @Override
-    void draw() {
+    public void draw() {
         System.out.println("Quadrato");
     }
 
     @Override
-    int getNumAngoli() {
+    public int getNumAngoli() {
         return 4;
     }
     

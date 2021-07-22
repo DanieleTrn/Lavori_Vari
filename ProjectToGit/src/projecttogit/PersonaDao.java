@@ -26,12 +26,12 @@ public class PersonaDao implements DaoInterface<Persona>{
 
     @Override
     public boolean updateElem(Persona elem, String[] params) {
-        
+        return true;
     }
 
     @Override
     public boolean removeElem(Persona elem) {
-        
+        return true;
     }
     
 }
