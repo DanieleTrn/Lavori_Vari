@@ -2,9 +2,9 @@ import time
 
 map = [[1,1,1,1,1,1,0,1,1,1,1,0,1,0,1],
        [1,0,0,0,0,0,0,0,0,0,0,0,0,0,1],
-       [1,1,1,1,1,1,1,0,1,1,1,0,1,0,9],
-       [1,1,1,0,1,1,1,1,1,1,1,0,0,1,1],
-       [1,1,1,0,1,1,1,0,0,0,0,0,1,1,1],
+       [1,1,1,1,1,1,1,0,1,1,1,0,1,0,1],
+       [9,0,0,0,1,1,1,1,1,1,1,0,0,1,1],
+       [1,1,0,0,1,1,1,0,0,0,0,0,1,1,1],
        [5,0,0,0,0,0,0,0,1,1,1,1,1,1,1]]
         
 def findPlayer():
@@ -27,7 +27,8 @@ def clearPath():
     for y in range(0,len(map)):
         for x in range(0,len(map[y])):
             if map[y][x] == 2:
-                map[y][x] = 0    
+                map[y][x] = 0
+
 
 print("**************Inizio ricerca****************")
 drawMap()
@@ -47,6 +48,7 @@ while map[exitY][exitX] == 9:
             map[y][x] = 2
             map[y][x+1] = 5
             flag = True
+            #drawMap()
     except IndexError:
         pass
     
@@ -55,6 +57,7 @@ while map[exitY][exitX] == 9:
             map[y][x] = 2
             map[y-1][x] = 5
             flag = True
+            #drawMap()
     except IndexError:
         pass
     
@@ -64,6 +67,7 @@ while map[exitY][exitX] == 9:
             map[y][x] = 2
             map[y+1][x] = 5
             flag = True
+            #drawMap()
     except IndexError:
         pass
 
@@ -73,6 +77,7 @@ while map[exitY][exitX] == 9:
             map[y][x] = 2
             map[y][x-1] = 5
             flag = True
+            #drawMap()
     except IndexError:
         pass
     
