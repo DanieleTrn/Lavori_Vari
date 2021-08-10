@@ -1,9 +1,9 @@
 import time
 
-map = [[1,1,1,1,1,1,9,1,1,1,1,1,1,1,1],
-       [1,1,1,1,0,0,0,0,0,0,0,0,1,1,1],
-       [1,1,1,1,1,1,1,0,1,1,1,0,1,1,1],
-       [1,1,1,0,1,1,1,1,1,1,1,0,0,0,1],
+map = [[1,1,1,1,1,1,0,1,1,1,1,0,1,0,1],
+       [1,0,0,0,0,0,0,0,0,0,0,0,0,0,1],
+       [1,1,1,1,1,1,1,0,1,1,1,0,1,0,9],
+       [1,1,1,0,1,1,1,1,1,1,1,0,0,1,1],
        [1,1,1,0,1,1,1,0,0,0,0,0,1,1,1],
        [5,0,0,0,0,0,0,0,1,1,1,1,1,1,1]]
         
@@ -35,30 +35,55 @@ drawMap()
 exitCoordinates = findExit()
 exitY = exitCoordinates[0]
 exitX = exitCoordinates[1]
+flag = False
 
 while map[exitY][exitX] == 9:
     coordinates = findPlayer()
     y = coordinates[0]
     x = coordinates[1]
 
-    if x+1 < len(map[1]) and (map[y][x+1] == 0 or map[y][x+1] == 9):
-        map[y][x] = 2
-        map[y][x+1] = 5
-    elif y-1 > 0 and (map[y-1][x] == 0 or map[y-1][x] == 9):
-        map[y][x] = 2
-        map[y-1][x] = 5
-    elif y+1 <= len(map) and (map[y+1][x] == 0 or map[y+1][x] == 9):
-        map[y][x] = 2
-        map[y+1][x] = 5
-    elif x-1 > 0 and (map[y][-1] == 0 or map[y+1][x] == 9):
-        map[y][x] = 2
-        map[y+1][x] = 5
-    else:
+    try:
+        if (map[y][x+1] == 0 or map[y][x+1] == 9) and flag != True:
+            map[y][x] = 2
+            map[y][x+1] = 5
+            flag = True
+    except IndexError:
+        pass
+    
+    try:
+        if (map[y-1][x] == 0 or map[y-1][x] == 9) and flag != True:
+            map[y][x] = 2
+            map[y-1][x] = 5
+            flag = True
+    except IndexError:
+        pass
+    
+    try:
+        
+        if (map[y+1][x] == 0 or map[y+1][x] == 9) and flag != True:
+            map[y][x] = 2
+            map[y+1][x] = 5
+            flag = True
+    except IndexError:
+        pass
+
+    try:
+        
+        if (map[y][x-1] == 0 or map[y][x-1] == 9) and flag != True:
+            map[y][x] = 2
+            map[y][x-1] = 5
+            flag = True
+    except IndexError:
+        pass
+    
+    if flag == False:
         map[y][x] = 3
         map[5][0] = 5
         clearPath()
         drawMap()
+    else:
+        flag = False
         
 print("***********************Fine ricerca**********************************")
-    
+drawMap()
     
