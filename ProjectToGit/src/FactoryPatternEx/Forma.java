@@ -1,7 +1,7 @@
 package FactoryPatternEx;
 
 public abstract class Forma {
-    abstract float getArea();
-    abstract void draw();
-    abstract int getNumAngoli();
+    public abstract float getArea();
+    public abstract void drawForma();
+    public abstract int getNumAngoli();
 }

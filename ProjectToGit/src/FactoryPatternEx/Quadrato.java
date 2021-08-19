@@ -1,16 +1,15 @@
 package FactoryPatternEx;
 
 public class Quadrato extends Forma{
-    int nAngoli;
-    
+
     @Override
     public float getArea() {
-        return 3;
+        return (float) 3.42;
     }
 
     @Override
-    public void draw() {
-        System.out.println("Quadrato");
+    public void drawForma() {
+        System.out.println("Sono un quadrato");
     }
 
     @Override

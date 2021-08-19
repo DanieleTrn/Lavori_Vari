@@ -1,4 +1,4 @@
-package classes;
+package daoexcercise.classes;
 
 public class Libro {
     int isbn;

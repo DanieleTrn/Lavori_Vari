@@ -1,4 +1,4 @@
-package classes;
+package daoexcercise.classes;
 
 public class Persona {
     String cf;

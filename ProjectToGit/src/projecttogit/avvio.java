@@ -1,24 +1,26 @@
 package projecttogit;
 
-import classes.Libro;
-import FactoryPatternEx.*;
+//import FactoryPatternEx.*;
+import daoexcercise.daoclasses.LibroDao;
+import daoexcercise.classes.Libro;
+import daoexcercise.classes.Persona;
+import daoexcercise.daoclasses.PersonaDao;
+import java.sql.SQLException;
+import java.util.ArrayList;
+import adapterPatternPackage.*;
 
 public class avvio {
 
-    public static void main(String[] args) {
-        System.out.println("\n**************************************\nDAO Pattern\n\n");
-        LibroDao bookList = new LibroDao();
-        bookList.addToList(new Libro(999,"libro3"));
-        bookList.removeElem(new Libro(12345,"libro1"));
-        for(Libro l : bookList.getWholeList()){
-            System.out.println(l);
+    public static void main(String[] args) throws SQLException {
+        ArrayList<Forma> forme = new ArrayList();
+        forme.add(new Quadrato(3));
+        forme.add(new FormaObjectAdapter(new Rettangolo(2,2)));
+        
+        for(Forma f : forme){
+            System.out.println(f);
         }
-        System.out.println("\n**************************************\nFactory Method\n\n");
-        Quadrato quad = (Quadrato) FormaFactory.getForma("Quadrato");
-        Triangolo tri = (Triangolo) FormaFactory.getForma("Triangolo");
-    
-        tri.draw();
-        quad.draw();
     }
+    
+    
     
 }

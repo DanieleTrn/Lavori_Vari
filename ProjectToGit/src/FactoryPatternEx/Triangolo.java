@@ -4,17 +4,17 @@ public class Triangolo extends Forma{
 
     @Override
     public float getArea() {
-        return 6;
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
-    public void draw() {
-        System.out.println("Triangolo");
+    public void drawForma() {
+        System.out.println("Sono un triangolo");
     }
 
     @Override
     public int getNumAngoli() {
-        return 3;
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     
 }
