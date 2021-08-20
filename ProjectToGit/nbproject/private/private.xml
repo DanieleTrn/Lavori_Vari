@@ -3,15 +3,21 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/Sandro/Desktop/Documents/NetBeansProjects/ProjectToGit/src/FactoryPatternEx/Quadrato.java</file>
-            <file>file:/C:/Users/Sandro/Desktop/Documents/NetBeansProjects/ProjectToGit/src/FactoryPatternEx/Triangolo.java</file>
             <file>file:/C:/Users/Sandro/Desktop/Documents/NetBeansProjects/ProjectToGit/src/daoexcercise/daoclasses/LibroDao.java</file>
             <file>file:/C:/Users/Sandro/Desktop/Documents/NetBeansProjects/ProjectToGit/src/daoexcercise/daoclasses/ConnectionDb.java</file>
-            <file>file:/C:/Users/Sandro/Desktop/Documents/NetBeansProjects/ProjectToGit/src/projecttogit/avvio.java</file>
             <file>file:/C:/Users/Sandro/Desktop/Documents/NetBeansProjects/ProjectToGit/src/daoexcercise/classes/Persona.java</file>
+            <file>file:/C:/Users/Sandro/Desktop/Documents/NetBeansProjects/ProjectToGit/src/adapterPatternPackage/Rettangolo.java</file>
+            <file>file:/C:/Users/Sandro/Desktop/Documents/NetBeansProjects/ProjectToGit/src/adapterPatternPackage/FormaObjectAdapter.java</file>
             <file>file:/C:/Users/Sandro/Desktop/Documents/NetBeansProjects/ProjectToGit/src/daoexcercise/classes/Libro.java</file>
             <file>file:/C:/Users/Sandro/Desktop/Documents/NetBeansProjects/ProjectToGit/src/daoexcercise/interfaces/DaoInterface.java</file>
+            <file>file:/C:/Users/Sandro/Desktop/Documents/NetBeansProjects/ProjectToGit/src/adapterPatternPackage/Triangolo.java</file>
+            <file>file:/C:/Users/Sandro/Desktop/Documents/NetBeansProjects/ProjectToGit/src/FactoryPatternEx/Quadrato.java</file>
+            <file>file:/C:/Users/Sandro/Desktop/Documents/NetBeansProjects/ProjectToGit/src/FactoryPatternEx/Triangolo.java</file>
+            <file>file:/C:/Users/Sandro/Desktop/Documents/NetBeansProjects/ProjectToGit/src/projecttogit/avvio.java</file>
+            <file>file:/C:/Users/Sandro/Desktop/Documents/NetBeansProjects/ProjectToGit/src/adapterPatternPackage/FormaGeometrica.java</file>
             <file>file:/C:/Users/Sandro/Desktop/Documents/NetBeansProjects/ProjectToGit/src/daoexcercise/daoclasses/PersonaDao.java</file>
+            <file>file:/C:/Users/Sandro/Desktop/Documents/NetBeansProjects/ProjectToGit/src/adapterPatternPackage/Quadrato.java</file>
+            <file>file:/C:/Users/Sandro/Desktop/Documents/NetBeansProjects/ProjectToGit/src/adapterPatternPackage/Forma.java</file>
             <file>file:/C:/Users/Sandro/Desktop/Documents/NetBeansProjects/ProjectToGit/src/FactoryPatternEx/Forma.java</file>
             <file>file:/C:/Users/Sandro/Desktop/Documents/NetBeansProjects/ProjectToGit/src/FactoryPatternEx/FormaFactory.java</file>
         </group>

@@ -8,19 +8,16 @@ import daoexcercise.daoclasses.PersonaDao;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import adapterPatternPackage.*;
+import strategyPatternPackage.*;
 
 public class avvio {
 
     public static void main(String[] args) throws SQLException {
-        ArrayList<Forma> forme = new ArrayList();
-        forme.add(new Quadrato(3));
-        forme.add(new FormaObjectAdapter(new Rettangolo(2,2)));
+        SortAlgorithm s1 = new StrategySortBubble();
+        SortAlgorithm s2 = new StrategySortMerge();
         
-        for(Forma f : forme){
-            System.out.println(f);
-        }
+        s1.sort();
+        s2.sort();
     }
-    
-    
-    
 }
+    
